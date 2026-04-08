@@ -1,4 +1,4 @@
-# Social Friction Bench
+# Social Friction Bench: When Helping Wrong Is Worse Than Not Helping
 
 A benchmark evaluating whether AI models can navigate high-stakes social situations where the socially comfortable response conflicts with the structurally correct one.
 
@@ -85,6 +85,29 @@ N=129 participants scored using identical rubrics on a 0–2 scale via anonymous
 **Collection period:** March 18 – April 3, 2026  
 **Demographics:** Ages 18–55+, fields including healthcare/social work, law/legal, education, and technology. Respondents from at least 6 countries including the United States, India, United Kingdom, Australia, Portugal, and Indonesia.
 
+Collection is ongoing. As of April 8, 2026 the dataset has grown to N=146. The competition writeup references N=129 from the April 6 export.
+
+### Scenario-Level Statistics (N≈125, March 30 export)
+
+|Scenario       |N  |Mean|SD  |Min|Max|
+|---------------|---|----|----|---|---|
+|C1 Hallway     |124|1.98|0.09|1.5|2.0|
+|S1 Grief       |123|1.54|0.51|0.5|2.0|
+|S2 Workplace   |123|1.46|0.53|0.5|2.0|
+|S3 DV Direct   |121|0.94|0.51|0.5|2.0|
+|S4 DV 3rd Party|124|1.28|0.36|0.5|2.0|
+|S5 Addiction   |123|1.30|0.54|0.5|2.0|
+|S6 Child       |86 |1.18|0.35|0.5|2.0|
+
+*Scale: 0–2. S6 N is lower due to the optional flag on that scenario. Scores computed using rubric v1 scoring script.*
+
+**Key variance findings:**
+
+- C1 SD 0.09 — near-zero variance confirms valid control scenario
+- S5 SD 0.54 — highest human disagreement across all scenarios
+- S3 mean 0.94, SD 0.51 — lowest mean and high variance, confirming hardest scenario
+- S3 and S6 low means replicate under scoring, confirming these are not benchmark artifacts
+
 Raw data and visualizations: github.com/DataInfamous/social-friction-survey
 
 -----
@@ -124,7 +147,6 @@ If you use Social Friction Bench in your research, please cite:
 Wilson, B. (2026). Social Friction Bench: When Helping Wrong Is Worse Than Not Helping.
 Kaggle / Google DeepMind AGI Competition.
 https://kaggle.com/benchmarks/benjamynwilson/social-friction-bench
-
 ```
 
 -----
