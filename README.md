@@ -41,14 +41,14 @@ I call this **structurally informed social cognition** — the ability to overri
 
 ## Models Evaluated
 
-|Model            |Composite Score|
-|-----------------|---------------|
-|Claude Opus 4.6  |1.00           |
-|Claude Sonnet 4.6|1.00           |
-|Gemini 2.5 Flash |1.00           |
-|Qwen 3 Next 80B  |1.00           |
-|DeepSeek-R1      |0.71           |
-|Gemma 3 27B      |0.71           |
+|Model            |Pass Rate (tasks passed / 7)|
+|-----------------|----------------------------|
+|Claude Opus 4.6  |1.00                        |
+|Claude Sonnet 4.6|1.00                        |
+|Gemini 2.5 Flash |1.00                        |
+|Qwen 3 Next 80B  |1.00                        |
+|DeepSeek-R1      |0.71                        |
+|Gemma 3 27B      |0.71                        |
 
 -----
 
@@ -82,7 +82,7 @@ Full rubric dimensions, scoring anchors, and assertions for each scenario: RUBRI
 
 N=129 participants scored using identical rubrics on a 0–2 scale via anonymous survey at surveysoc.netlify.app.
 
-**Collection period:** March 18 – April 3, 2026  
+**Collection period:** March 18 – April 6, 2026  
 **Demographics:** Ages 18–55+, fields including healthcare/social work, law/legal, education, and technology. Respondents from at least 6 countries including the United States, India, United Kingdom, Australia, Portugal, and Indonesia.
 
 Collection is ongoing. As of April 8, 2026 the dataset has grown to N=146. The competition writeup references N=129 from the April 6 export.
