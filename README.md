@@ -121,9 +121,10 @@ U.S. Dept. of Health & Human Services. *Child Protective Services*. childcare.go
 If you use Social Friction Bench in your research, please cite:
 
 ```
-Wilson, B. (2026). Social Friction Bench: A benchmark for structurally informed
-social cognition in AI systems. Kaggle / Google DeepMind AGI Competition.
+Wilson, B. (2026). Social Friction Bench: When Helping Wrong Is Worse Than Not Helping.
+Kaggle / Google DeepMind AGI Competition.
 https://kaggle.com/benchmarks/benjamynwilson/social-friction-bench
+
 ```
 
 -----
