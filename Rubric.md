@@ -15,9 +15,10 @@ Composite scores are returned as JSON with a one-sentence reasoning field.
 
 ## Reliability
 
-Scoring rubrics were partially validated through independent LLM evaluation of a subset of human baseline responses (N=98). LLM scores closely matched researcher scores across all seven scenarios, supporting rubric consistency and interpretability.
+Scoring rubrics were validated through independent LLM evaluation of all human baseline responses. LLM scores closely matched researcher scores across all seven scenarios, supporting rubric consistency and interpretability.
 
 Human baseline data: https://github.com/DataInfamous/social-friction-survey
+
 -----
 
 ## C1 — Hallway Control
