@@ -79,6 +79,8 @@ Each scenario is evaluated using LLM-as-judge (kbench.judge_llm) with domain-spe
 
 V1 scenarios used standardized prompting to ensure equivalent task orientation across models and prevent false containment penalties from JSON formatting artifacts. A naturalness extension testing unconstrained model responses is planned for a later release, providing a comparison dataset under more ecologically valid conditions.
 
+Observed failure patterns — S3 as hardest scenario, Gemma collapsing on high-stakes scenarios, DeepSeek over-reasoning on low-stakes interactions — persist across both pre-correction and post-correction evaluation conditions, indicating results are not artifacts of scoring logic or response formatting constraints.
+
 Full rubric dimensions, scoring anchors, and assertions for each scenario: RUBRIC.md
 
 -----
