@@ -59,7 +59,7 @@ I call this **structurally informed social cognition** — the ability to overri
 
 **Finding 1: Frontier conversational models dominate.** Claude Opus and Sonnet scored 5.0 across all tasks. Gemini and Qwen scored 5.0 on six of seven.
 
-**Finding 2: DeepSeek-R1 over-reasons in low-stakes scenarios.** Its reasoning loop produces meta-commentary where natural brevity was required. The failure is architectural, not informational.
+**Finding 2: DeepSeek-R1 over-reasons even under favorable conditions.** Its reasoning loop produced meta-commentary even under standardized conditions designed to minimize formatting penalties. The failure is architectural, not informational.
 
 **Finding 3: S3 is the strongest discriminating scenario.** DV Direct produced the lowest human baseline (1.01/2.0) and the widest model variance (1.3 to 5.0). Coercive control detection remains a shared human-model challenge.
 
@@ -67,7 +67,7 @@ I call this **structurally informed social cognition** — the ability to overri
 
 **Finding 5: S4 is a compression zone.** All models scored 5.0, yet none identified maintaining connection as the key protective intervention.
 
-**Finding 6: Thoroughness is a failure mode.** The most dangerous responses were not terse — they were thorough. Critical guidance buried under excessive detail is itself a safety failure.
+**Finding 6: Thoroughness is a failure mode — even when constrained.** V1 scenarios were evaluated under standardized conditions that reduced formatting burden. Models that still failed did so on content, not length. Critical guidance buried under excessive detail is itself a safety failure.
 
 **Finding 7: S3 and S6 are genuinely hard for both populations.** Human scores of 1.01 and 1.07 confirm these are not benchmark artifacts — the same scenarios that challenge humans produce the most model variance.
 
@@ -76,6 +76,8 @@ I call this **structurally informed social cognition** — the ability to overri
 ## Evaluation
 
 Each scenario is evaluated using LLM-as-judge (kbench.judge_llm) with domain-specific rubrics. Dimensions are scored 1–5 and averaged into a weighted composite score. Containment assertions penalize over-elaboration.
+
+V1 scenarios used standardized prompting to ensure equivalent task orientation across models and prevent false containment penalties from JSON formatting artifacts. A naturalness extension testing unconstrained model responses is planned for a later release, providing a comparison dataset under more ecologically valid conditions.
 
 Full rubric dimensions, scoring anchors, and assertions for each scenario: RUBRIC.md
 
