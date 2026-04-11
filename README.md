@@ -81,7 +81,7 @@ V1 scenarios used standardized prompting to ensure equivalent task orientation a
 
 Observed failure patterns — S3 as hardest scenario, Gemma collapsing on high-stakes scenarios, DeepSeek over-reasoning on low-stakes interactions — persist across both pre-correction and post-correction evaluation conditions, indicating results are not artifacts of scoring logic or response formatting constraints.
 
-Full rubric dimensions, scoring anchors, and assertions for each scenario: RUBRIC.md
+Full rubric dimensions, scoring anchors, and assertions for each scenario: <RUBRIC.md>
 
 -----
 
@@ -135,7 +135,7 @@ Collection is ongoing. As of April 8, 2026 the dataset has grown to N=146. The c
 - S3 mean 0.94, SD 0.51 — lowest mean and high variance, confirming hardest scenario
 - S3 and S6 low means replicate under scoring, confirming these are not benchmark artifacts
 
-Raw data and visualizations: github.com/DataInfamous/social-friction-survey
+Raw data and visualizations: [github.com/DataInfamous/social-friction-survey](https://github.com/DataInfamous/social-friction-survey)
 
 -----
 
@@ -143,35 +143,32 @@ Raw data and visualizations: github.com/DataInfamous/social-friction-survey
 
 Correct responses are grounded in established professional standards:
 
-- **S3, S4:** National Domestic Violence Hotline; Evan Stark, *Coercive Control* (Oxford, 2007); NNEDV Safety Net Project; Sharps et al. (2024), *Coercive Control and Intimate Partner Violence*, PMC10878426; End Coercive Control USA, Survivor-Centered Language Framework; BWJP, *Coercive Control Codification Brief*; Edge Hill University / UK Home Office, *AI Tool for Coercive Language Pattern Detection* (2022)
+- **S3, S4:** National Domestic Violence Hotline; Evan Stark, *Coercive Control* (Oxford, 2007); NNEDV Safety Net Project; BWJP Coercive Control Codification Brief; Edge Hill University / UK Home Office AI Coercive Language Detection Tool (2022)
 - **S5:** SAMHSA TIP 35; Marlatt & Gordon Relapse Prevention Model (1985)
 - **S6:** NCTSN, *What to Do If Your Child Discloses Sexual Abuse*; Darkness to Light, Mandatory Reporting; Childhelp: 1-800-422-4453
 - **C1:** Goffman, *Interaction Ritual* (1967)
 - **S1:** Silk & Goldman, Ring Theory (2013)
 - **S2:** Kim Scott, *Radical Candor* (2017); HBR feedback sandwich research
 
-
 -----
 
 ## References
 
 Bandura, A. (1986). *Social foundations of thought and action: A social cognitive theory*. Prentice-Hall.  
-Happé, F., Cook, J.L., & Bird, G. (2017). The structure of social cognition. *Annual Review of Psychology*, 68, 243–267. doi:10.1146/annurev-psych-010416-044046  
 Burnell, R. et al. (2026). *Measuring Progress Toward AGI*. Google DeepMind.  
 Chen, R. et al. (2025). *Theory of Mind in LLMs*. ACL 2025.  
-Edge Hill University / UK Home Office. (2022). AI tool designed to identify 
-coercive language patterns receives Home Office funding. edgehill.ac.uk.
-Rabinowitz, N. et al. (2025). *ToM benchmarks are broken for LLMs*. ICML 2025.  
-Lupariello, F. et al. (2023). *AI and Child Abuse and Neglect*. Children, 10(10), 1659.  
-National Child Traumatic Stress Network. *What to Do If Your Child Discloses Sexual Abuse*. nctsn.org.  
 Darkness to Light. *Mandatory Reporting*. d2l.org.  
+Edge Hill University / UK Home Office. (2022). AI tool designed to identify coercive language patterns receives Home Office funding. edgehill.ac.uk.  
+Happé, F., Cook, J.L., & Bird, G. (2017). The structure of social cognition. *Annual Review of Psychology*, 68, 243–267. doi:10.1146/annurev-psych-010416-044046  
+Lupariello, F. et al. (2023). AI and Child Abuse and Neglect. *Children*, 10(10), 1659.  
+National Child Traumatic Stress Network. *What to Do If Your Child Discloses Sexual Abuse*. nctsn.org.  
+Rabinowitz, N. et al. (2025). *ToM benchmarks are broken for LLMs*. ICML 2025.  
+Sharps, P. et al. (2024). Coercive Control and Intimate Partner Violence. PMC10878426.  
 U.S. Dept. of Health & Human Services. *Child Protective Services*. childcare.gov.
 
 -----
 
 ## Citation
-
-If you use Social Friction Bench in your research, please cite:
 
 ```
 Wilson, B. (2026). Social Friction Bench: When Helping Wrong Is Worse Than Not Helping.
