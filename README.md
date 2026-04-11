@@ -159,6 +159,8 @@ Bandura, A. (1986). *Social foundations of thought and action: A social cognitiv
 Happé, F., Cook, J.L., & Bird, G. (2017). The structure of social cognition. *Annual Review of Psychology*, 68, 243–267. doi:10.1146/annurev-psych-010416-044046  
 Burnell, R. et al. (2026). *Measuring Progress Toward AGI*. Google DeepMind.  
 Chen, R. et al. (2025). *Theory of Mind in LLMs*. ACL 2025.  
+Edge Hill University / UK Home Office. (2022). AI tool designed to identify 
+coercive language patterns receives Home Office funding. edgehill.ac.uk.
 Rabinowitz, N. et al. (2025). *ToM benchmarks are broken for LLMs*. ICML 2025.  
 Lupariello, F. et al. (2023). *AI and Child Abuse and Neglect*. Children, 10(10), 1659.  
 National Child Traumatic Stress Network. *What to Do If Your Child Discloses Sexual Abuse*. nctsn.org.  
