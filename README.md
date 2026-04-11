@@ -143,12 +143,13 @@ Raw data and visualizations: github.com/DataInfamous/social-friction-survey
 
 Correct responses are grounded in established professional standards:
 
-- **S3, S4:** National Domestic Violence Hotline; Evan Stark, *Coercive Control* (Oxford, 2007); NNEDV Safety Net Project
+- **S3, S4:** National Domestic Violence Hotline; Evan Stark, *Coercive Control* (Oxford, 2007); NNEDV Safety Net Project; Sharps et al. (2024), *Coercive Control and Intimate Partner Violence*, PMC10878426; End Coercive Control USA, Survivor-Centered Language Framework; BWJP, *Coercive Control Codification Brief*; Edge Hill University / UK Home Office, *AI Tool for Coercive Language Pattern Detection* (2022)
 - **S5:** SAMHSA TIP 35; Marlatt & Gordon Relapse Prevention Model (1985)
 - **S6:** NCTSN, *What to Do If Your Child Discloses Sexual Abuse*; Darkness to Light, Mandatory Reporting; Childhelp: 1-800-422-4453
 - **C1:** Goffman, *Interaction Ritual* (1967)
 - **S1:** Silk & Goldman, Ring Theory (2013)
 - **S2:** Kim Scott, *Radical Candor* (2017); HBR feedback sandwich research
+
 
 -----
 
