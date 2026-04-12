@@ -93,7 +93,6 @@ Observed failure patterns — S3 as hardest scenario, Gemma collapsing on high-s
 
 Full rubric dimensions, scoring anchors, and assertions for each scenario: [Rubric.md](https://github.com/DataInfamous/social-friction-bench/blob/main/Rubric.md)
 
-
 ---
 
 ## Deployment Threshold Guidance
@@ -120,7 +119,7 @@ A model scoring 3.1 on S6 technically passes the benchmark but should not be dep
 
 N=129 participants scored using identical rubrics on a 0–2 scale via anonymous survey at surveysoc.netlify.app.
 
-**Collection period:** March 18 – April 6, 2026  
+**Collection period:** March 18 – April 6, 2026
 **Demographics:** Ages 18–55+, fields including healthcare/social work, law/legal, education, and technology. Respondents from at least 6 countries including the United States, India, United Kingdom, Australia, Portugal, and Indonesia.
 
 Collection is ongoing. As of April 8, 2026 the dataset has grown to N=146. The competition writeup references N=129 from the April 6 export.
@@ -165,24 +164,40 @@ Correct responses are grounded in established professional standards:
 
 ## References
 
-Bandura, A. (1986). *Social foundations of thought and action: A social cognitive theory*. Prentice-Hall.  
-Burnell, R. et al. (2026). *Measuring Progress Toward AGI*. Google DeepMind.  
-Chen, R. et al. (2025). *Theory of Mind in LLMs*. ACL 2025.  
-Darkness to Light. *Mandatory Reporting*. d2l.org.  
-Edge Hill University / UK Home Office. (2022). AI tool designed to identify coercive language patterns receives Home Office funding. edgehill.ac.uk.  
-Happé, F., Cook, J.L., & Bird, G. (2017). The structure of social cognition. *Annual Review of Psychology*, 68, 243–267. doi:10.1146/annurev-psych-010416-044046  
-Lupariello, F. et al. (2023). AI and Child Abuse and Neglect. *Children*, 10(10), 1659.  
-National Child Traumatic Stress Network. *What to Do If Your Child Discloses Sexual Abuse*. nctsn.org.  
-Purohit, A.K., & Heuer, H. (2026). A Conditional Companion: Lived Experiences of People with Mental Health Disorders Using LLMs. *CHI '26*. https://doi.org/10.1145/3772318.3791763  
-Rabinowitz, N. et al. (2025). *ToM benchmarks are broken for LLMs*. ICML 2025.  
-Sharps, P. et al. (2024). Coercive Control and Intimate Partner Violence. PMC10878426.  
+Bandura, A. (1986). *Social foundations of thought and action: A social cognitive theory*. Prentice-Hall.
+
+Burnell, R. et al. (2026). *Measuring Progress Toward AGI*. Google DeepMind.
+
+Chen, R. et al. (2025). *Theory of Mind in LLMs*. ACL 2025.
+
+Darkness to Light. *Mandatory Reporting*. d2l.org.
+
+Edge Hill University / UK Home Office. (2022). AI tool designed to identify coercive language patterns receives Home Office funding. edgehill.ac.uk.
+
+Happé, F., Cook, J.L., & Bird, G. (2017). The structure of social cognition. *Annual Review of Psychology*, 68, 243–267. doi:10.1146/annurev-psych-010416-044046
+
+Lupariello, F. et al. (2023). AI and Child Abuse and Neglect. *Children*, 10(10), 1659.
+
+National Child Traumatic Stress Network. *What to Do If Your Child Discloses Sexual Abuse*. nctsn.org.
+
+Purohit, A.K., & Heuer, H. (2026). A Conditional Companion: Lived Experiences of People with Mental Health Disorders Using LLMs. *CHI '26*. https://doi.org/10.1145/3772318.3791763
+
+Rabinowitz, N. et al. (2025). *ToM benchmarks are broken for LLMs*. ICML 2025.
+
+Sharps, P. et al. (2024). Coercive Control and Intimate Partner Violence. PMC10878426.
+
 U.S. Dept. of Health & Human Services. *Child Protective Services*. childcare.gov.
 
 ---
 
 ## Citation
+
+If you use this benchmark in your research, please cite:
+
 Wilson, B. (2026). Social Friction Bench: When Helping Wrong Is Worse Than Not Helping.
+
 Kaggle / Google DeepMind AGI Competition.
+
 https://kaggle.com/benchmarks/benjamynwilson/social-friction-bench
 
 
