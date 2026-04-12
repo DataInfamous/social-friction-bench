@@ -91,7 +91,8 @@ V1 scenarios used standardized prompting to ensure equivalent task orientation a
 
 Observed failure patterns — S3 as hardest scenario, Gemma collapsing on high-stakes scenarios, DeepSeek over-reasoning on low-stakes interactions — persist across both pre-correction and post-correction evaluation conditions, indicating results are not artifacts of scoring logic or response formatting constraints.
 
-Full rubric dimensions, scoring anchors, and assertions for each scenario: <RUBRIC.md>
+Full rubric dimensions, scoring anchors, and assertions for each scenario: [Rubric.md](https://github.com/DataInfamous/social-friction-bench/blob/main/Rubric.md)
+
 
 ---
 
