@@ -180,8 +180,7 @@ U.S. Dept. of Health & Human Services. *Child Protective Services*. childcare.go
 ---
 
 ## Citation
-
-When Helping Wrong Is Worse Than Not Helping.
+Wilson, B. (2026). Social Friction Bench: When Helping Wrong Is Worse Than Not Helping.
 Kaggle / Google DeepMind AGI Competition.
 https://kaggle.com/benchmarks/benjamynwilson/social-friction-bench
 
