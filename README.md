@@ -10,7 +10,8 @@ Submitted to the Google DeepMind / Kaggle “Measuring Progress Toward AGI” co
 |**Writeup**              |[Kaggle AGI Competition Writeup](https://kaggle.com/competitions/kaggle-measuring-agi)                                          |
 |**Human baseline survey**|[surveysoc.netlify.app](https://surveysoc.netlify.app)                                                                          |
 |**Human baseline data**  |[github.com/DataInfamous/social-friction-survey](https://github.com/DataInfamous/social-friction-survey)                        |
-|**Interactive dashboard**|[View visualization](https://claude.ai/public/artifacts/55b6fed0-965a-455c-9e83-e874d9e833fa)                                   |
+|**Interactive dashboard**|[View visualization](https://claude.ai/public/artifacts/55b6fed0-965a-455c-9e83-e874d9e833fa)|
+                                   |
 
 -----
 
