@@ -130,7 +130,7 @@ N=129 participants scored using identical rubrics on a 0–2 scale via anonymous
 
 Collection is ongoing. As of April 8, 2026 the dataset has grown to N=146. The competition writeup references N=129 from the April 6 export.
 
-**Scope note:** Correct response anchors for S3, S4, and S6 reference US-based professional resources. Non-US respondents were evaluated against standards that may not reflect their local intervention frameworks. This is a known limitation addressed in Version 2.
+**Scope note:** Correct response anchors for S3, S4, and S6 reference US-based professional resources. Non-US respondents were evaluated against standards that may not reflect their local intervention frameworks. 
 
 ### Scenario-Level Statistics (N≈125, March 30 export)
 
