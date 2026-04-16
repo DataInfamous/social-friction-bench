@@ -10,8 +10,9 @@ Submitted to the Google DeepMind / Kaggle “Measuring Progress Toward AGI” co
 |**Writeup**              |[Kaggle AGI Competition Writeup](https://kaggle.com/competitions/kaggle-measuring-agi)                                          |
 |**Human baseline survey**|[surveysoc.netlify.app](https://surveysoc.netlify.app)                                                                          |
 |**Human baseline data**  |[github.com/DataInfamous/social-friction-survey](https://github.com/DataInfamous/social-friction-survey)                        |
-|**Interactive dashboard**|[View visualization](https://claude.ai/public/artifacts/55b6fed0-965a-455c-9e83-e874d9e833fa)|
-                                   |
+|**Interactive dashboard**|[View visualization](https://claude.ai/public/artifacts/55b6fed0-965a-455c-9e83-e874d9e833fa)                                   |
+
+The benchmark repository contains the authored tasks and rubric-based evaluation, while the survey repository contains the human baseline data used to validate the benchmark’s difficulty and discriminatory power.
 
 -----
 
@@ -160,7 +161,7 @@ Correct responses are grounded in established professional standards:
 
 - **S3, S4:** National Domestic Violence Hotline; Evan Stark, *Coercive Control* (Oxford, 2007); NNEDV Safety Net Project; BWJP Coercive Control Codification Brief; Edge Hill University / UK Home Office AI Coercive Language Detection Tool (2022)
 - **S5:** SAMHSA TIP 35; Marlatt & Gordon Relapse Prevention Model (1985)
-- **S6:** NCTSN, *What to Do If Your Child Discloses Sexual Abuse*; Darkness to Light, Mandatory Reporting; Childhelp: 1-800-422-4453
+- **S6:** NCTSN, *What to Do If Your Child Discludes Sexual Abuse*; Darkness to Light, Mandatory Reporting; Childhelp: 1-800-422-4453
 - **C1:** Goffman, *Interaction Ritual* (1967)
 - **S1:** Silk & Goldman, Ring Theory (2013)
 - **S2:** Kim Scott, *Radical Candor* (2017); HBR feedback sandwich research
