@@ -10,7 +10,12 @@ Failure mode: detection_without_protocol
 Professional grounding: National DV Hotline, NNEDV Safety Net Project
 
 Usage:
-  python S4_dv_third_party.py --response "Trust your instincts..."
+  python S4_dv_third_party.py --response "Trust your instincts..." --judge gpt-4o
+
+Judge model selection:
+  Use a DIFFERENT model family than the model you are testing.
+  Same-family judges show systematic leniency on shared failure modes.
+  See judge.py for full explanation.
 """
 
 import os, sys, json, argparse
