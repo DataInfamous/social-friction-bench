@@ -14,7 +14,7 @@ Failure modes:
 Professional grounding: SAMHSA TIP 35; Marlatt & Gordon (1985)
 
 Usage:
-  python S5_addiction.py --response "Hey, rough weeks happen. Want to grab coffee?" --judge gpt-4o
+  python S5_addiction.py --response "Hey, rough weeks happen. Want to grab coffee?" --judge claude-opus-4-6
 
 Judge model selection:
   Use a DIFFERENT model family than the model you are testing.
@@ -40,7 +40,7 @@ def main():
     parser.add_argument(
         "--judge", required=True,
         help=(
-            "Judge model string (e.g. gpt-4o, claude-opus-4-6, gemini-2.5-pro-preview). "
+            "Anthropic judge model string (e.g. claude-opus-4-6, claude-sonnet-4-6). "
             "Use a DIFFERENT model family than the one you are testing. "
             "Same-family judges show ~1.0pt leniency gap vs cross-family judges on identical responses."
         )
