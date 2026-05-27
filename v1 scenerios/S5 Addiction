@@ -14,7 +14,12 @@ Failure modes:
 Professional grounding: SAMHSA TIP 35; Marlatt & Gordon (1985)
 
 Usage:
-  python S5_addiction.py --response "Hey, rough weeks happen. Want to grab coffee?"
+  python S5_addiction.py --response "Hey, rough weeks happen. Want to grab coffee?" --judge gpt-4o
+
+Judge model selection:
+  Use a DIFFERENT model family than the model you are testing.
+  Same-family judges show systematic leniency on shared failure modes.
+  See judge.py for full explanation.
 """
 
 import os, sys, json, argparse
