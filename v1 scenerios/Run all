@@ -1,0 +1,124 @@
+"""
+SFB V1 — Run All Scenarios
+============================
+Score a model's responses across all 7 V1 scenarios.
+
+Expects a CSV with columns:
+  scenario     — one of: C1, S1, S2, S3, S4, S5, S6
+  response     — the model's response text
+
+The judge model (claude-opus-4-6) is hardcoded and cannot be changed.
+This ensures consistent adversarial evaluation across all models tested.
+
+Usage:
+  python run_all.py --csv my_model_responses.csv --model "claude-opus-4-6"
+  python run_all.py --csv my_model_responses.csv --model "gemini-2.0-flash"
+
+CSV example:
+  scenario,response
+  C1,"Good, thanks!"
+  S1,"I'm so sorry. I love you."
+  S2,"This looks great, but there's a legal issue you need to address first."
+  S3,"Of course — I'll keep it between us."
+  S4,"Trust your gut. Stay close to her."
+  S5,"Hey, rough weeks are rough. Want to grab coffee instead?"
+  S6,"Call Childhelp at 1-800-422-4453 right now, before anything else."
+"""
+
+import os, sys, json, csv, argparse, time
+sys.path.insert(0, os.path.dirname(__file__))
+from judge import judge, print_result, RUBRICS
+
+from C1_hallway         import SCENARIO_TEXT as T_C1
+from S1_grief           import SCENARIO_TEXT as T_S1
+from S2_workplace       import SCENARIO_TEXT as T_S2
+from S3_dv_direct       import SCENARIO_TEXT as T_S3
+from S4_dv_third_party  import SCENARIO_TEXT as T_S4
+from S5_addiction       import SCENARIO_TEXT as T_S5
+from S6_child_disclosure import SCENARIO_TEXT as T_S6
+
+SCENARIO_TEXTS = {
+    "C1": T_C1,
+    "S1": T_S1,
+    "S2": T_S2,
+    "S3": T_S3,
+    "S4": T_S4,
+    "S5": T_S5,
+    "S6": T_S6,
+}
+
+
+def run_from_csv(csv_path: str, model_label: str) -> list:
+    results = []
+    with open(csv_path, newline="", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            sid      = row.get("scenario", "").strip()
+            response = row.get("response", "").strip()
+
+            if sid not in SCENARIO_TEXTS:
+                print(f"  SKIP: unknown scenario {sid!r}")
+                continue
+            if not response:
+                print(f"  SKIP: empty response for {sid}")
+                continue
+
+            print(f"Scoring {sid}...")
+            result = judge(sid, SCENARIO_TEXTS[sid], response, judge_model=args.judge)
+            result["scenario_id"] = sid
+            result["model"]       = model_label
+            result["response"]    = response
+            print_result(result)
+            results.append(result)
+            time.sleep(0.5)
+
+    return results
+
+
+def print_summary(results: list, model_label: str) -> None:
+    print("\n" + "=" * 55)
+    print(f"SUMMARY — {model_label}")
+    print("=" * 55)
+    passed = 0
+    for r in results:
+        sid     = r.get("scenario_id", "?")
+        score   = r.get("final_score", "?")
+        status  = "PASS" if r.get("pass") else "FAIL"
+        tags    = [t for t in r.get("failure_mode_tags", []) if t != "none"]
+        tag_str = ", ".join(tags) if tags else "—"
+        print(f"  {sid:<5} {score:<6} {status:<5}  {tag_str}")
+        if r.get("pass"):
+            passed += 1
+
+    total = len(results)
+    if total > 0:
+        print(f"\n  {passed}/{total} passed ({passed/total*100:.0f}%)")
+    print("=" * 55)
+
+
+def main():
+    parser = argparse.ArgumentParser(description="SFB V1 — Run All Scenarios")
+    parser.add_argument("--csv",   required=True, help="CSV with scenario,response columns")
+    parser.add_argument("--model", required=True, help="Model label (for output labeling only)")
+    parser.add_argument("--output", help="Optional: save full results to this JSON path")
+    parser.add_argument(
+        "--judge", required=True,
+        help=(
+            "Anthropic judge model string (e.g. claude-opus-4-6, claude-sonnet-4-6). "
+            "Must be a DIFFERENT model family than --model. "
+            "Same-family judges show ~1.0pt systematic leniency on shared failure modes."
+        )
+    )
+    args = parser.parse_args()
+
+    results = run_from_csv(args.csv, args.model)
+    print_summary(results, args.model)
+
+    if args.output:
+        with open(args.output, "w") as f:
+            json.dump(results, f, indent=2)
+        print(f"\nResults saved: {args.output}")
+
+
+if __name__ == "__main__":
+    main()
