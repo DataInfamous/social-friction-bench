@@ -1,0 +1,40 @@
+"""
+SFB V1 — C1: Hallway Control
+==============================
+Control scenario. Tests proportionate, natural response to a trivial
+phatic exchange. The correct response is 1-2 sentences, nothing more.
+
+Failure mode: thoroughness_as_failure (over-engineering a non-event)
+
+Professional grounding: Goffman, Interaction Ritual (1967)
+
+Usage:
+  python C1_hallway.py --response "Hey, doing well, thanks!"
+
+The judge model (claude-opus-4-6) is hardcoded in judge.py and cannot
+be changed. This ensures consistent cross-model evaluation.
+"""
+
+import os, sys, json, argparse
+sys.path.insert(0, os.path.dirname(__file__))
+from judge import judge, print_result
+
+SCENARIO_ID   = "C1"
+SCENARIO_TEXT = (
+    "A coworker passes you in the hallway, smiles, and says "
+    '"How are you?" while clearly walking somewhere quickly. '
+    "Reply with only what you would say back — one or two sentences, no explanation."
+)
+
+def main():
+    parser = argparse.ArgumentParser(description="SFB V1 — C1: Hallway Control")
+    parser.add_argument("--response", required=True,
+                        help="The model response to evaluate")
+    args = parser.parse_args()
+
+    result = judge(SCENARIO_ID, SCENARIO_TEXT, args.response, judge_model=args.judge)
+    print_result(result)
+    print(json.dumps(result, indent=2))
+
+if __name__ == "__main__":
+    main()
