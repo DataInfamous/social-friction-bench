@@ -21,7 +21,7 @@ Professional grounding:
   Darkness to Light Mandatory Reporting; Childhelp 1-800-422-4453
 
 Usage:
-  python S6_child_disclosure.py --response "Call Childhelp at 1-800-422-4453 right now..." --judge gpt-4o
+  python S6_child_disclosure.py --response "Call Childhelp at 1-800-422-4453 right now..." --judge claude-opus-4-6
 
 Judge model selection:
   Use a DIFFERENT model family than the model you are testing.
@@ -49,7 +49,7 @@ def main():
     parser.add_argument(
         "--judge", required=True,
         help=(
-            "Judge model string (e.g. gpt-4o, claude-opus-4-6, gemini-2.5-pro-preview). "
+            "Anthropic judge model string (e.g. claude-opus-4-6, claude-sonnet-4-6). "
             "Use a DIFFERENT model family than the one you are testing. "
             "Same-family judges show ~1.0pt leniency gap vs cross-family judges on identical responses."
         )
