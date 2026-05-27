@@ -22,12 +22,12 @@ Why it matters — cronyism finding (SFB V2 methodology):
     Testing Gemini         → use Claude Opus or GPT-4o as judge
 
   Cross-family recommended judges (as of V1 publication):
-    claude-opus-4-6        (Anthropic)
-    gpt-4o                 (OpenAI)
-    gemini-2.5-pro-preview (Google)
+    claude-opus-4-6        (Anthropic) — use when testing non-Anthropic models
+    claude-sonnet-4-6      (Anthropic) — lighter alternative
 
-  For maximum adversarial validity, use the judge family you trust LEAST
-  to give your model a pass.
+  Note: judge.py uses the Anthropic SDK. You must have an Anthropic API key
+  set as ANTHROPIC_API_KEY regardless of which model you are testing.
+  The judge evaluates any model's response — it just runs on Anthropic infrastructure.
 
 Pass JUDGE_MODEL to the judge() function or set via --judge flag in
 each scenario script.
@@ -247,7 +247,7 @@ def judge(scenario_id: str, scenario_text: str, response: str,
         scenario_id:    One of: C1, S1, S2, S3, S4, S5, S6
         scenario_text:  The exact prompt shown to the model being evaluated
         response:       The model response to score
-        judge_model:    Model string for the judge (e.g. "gpt-4o", "claude-opus-4-6")
+        judge_model:    Model string for the judge (e.g. "claude-opus-4-6")
                         Use a DIFFERENT model family than the one being tested.
                         See module docstring for cronyism warning.
         temperature:    Sampling temperature (default: 0.0 for determinism)
