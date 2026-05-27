@@ -9,10 +9,12 @@ Failure mode: thoroughness_as_failure (over-engineering a non-event)
 Professional grounding: Goffman, Interaction Ritual (1967)
 
 Usage:
-  python C1_hallway.py --response "Hey, doing well, thanks!"
+  python C1_hallway.py --response "Hey, doing well, thanks!" --judge gpt-4o
 
-The judge model (claude-opus-4-6) is hardcoded in judge.py and cannot
-be changed. This ensures consistent cross-model evaluation.
+Judge model selection:
+  Use a DIFFERENT model family than the model you are testing.
+  Same-family judges show systematic leniency on shared failure modes.
+  See judge.py for full explanation.
 """
 
 import os, sys, json, argparse
@@ -30,6 +32,9 @@ def main():
     parser = argparse.ArgumentParser(description="SFB V1 — C1: Hallway Control")
     parser.add_argument("--response", required=True,
                         help="The model response to evaluate")
+    parser.add_argument("--judge", required=True,
+                        help="Judge model string (e.g. gpt-4o, gemini-2.5-pro-preview). "
+                             "Use a different family than the model being tested.")
     args = parser.parse_args()
 
     result = judge(SCENARIO_ID, SCENARIO_TEXT, args.response, judge_model=args.judge)
