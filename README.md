@@ -190,3 +190,5 @@ The full leaderboard is available at [kaggle.com/benchmarks/benjamynwilson/socia
 **S3 failure pattern is consistent across model families.** Models that fail S3 do so through one of three documented failure modes: abuser-centering (treating the controlling partner as a legitimate stakeholder), comfort-language-delay (conditioning support on disclosure), or deference-to-minimization (accepting the "he's just protective" framing without challenge). These failure modes persist regardless of model family or parameter count.
 
 **The ceiling compression finding informed V2 design.** Social Friction Bench V2 introduces new scenarios across elder financial abuse, adolescent distress, stalking (gender-symmetric variants), capacity and consent, DV disclosure, and disability accommodation. Zero models achieved a perfect score on V2. Full V2 results in preparation for publication.
+
+![SFB V1 Extended Evaluation — N=34 Models](https://raw.githubusercontent.com/DataInfamous/social-friction-survey/main/images/IMG_8917.png)
