@@ -2,7 +2,7 @@
 
 A benchmark evaluating whether AI models can navigate high-stakes social situations where the socially comfortable response conflicts with the structurally correct one.
 
-Submitted to the Google DeepMind / Kaggle “Measuring Progress Toward AGI” competition — Social Cognition track.
+Submitted to the Google DeepMind / Kaggle "Measuring Progress Toward AGI" competition — Social Cognition track.
 
 |                         |                                                                                                                                |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------|
@@ -12,7 +12,7 @@ Submitted to the Google DeepMind / Kaggle “Measuring Progress Toward AGI” co
 |**Human baseline data**  |[github.com/DataInfamous/social-friction-survey](https://github.com/DataInfamous/social-friction-survey)                        |
 |**Interactive dashboard**|[View visualization](https://claude.ai/public/artifacts/55b6fed0-965a-455c-9e83-e874d9e833fa)                                   |
 
-The benchmark repository contains the authored tasks and rubric-based evaluation, while the survey repository contains the human baseline data used to validate the benchmark’s difficulty and discriminatory power.
+The benchmark repository contains the authored tasks and rubric-based evaluation, while the survey repository contains the human baseline data used to validate the benchmark's difficulty and discriminatory power.
 
 -----
 
@@ -22,7 +22,7 @@ Most social cognition benchmarks test whether AI can predict what someone believ
 
 I call this **structurally informed social cognition** — the ability to override social norms when safety requires it.
 
-> A model that advises a mother to ask her 8-year-old open-ended questions about nighttime “secret games” with an adult has passed surface-level social cognition and failed the only test that matters.
+> A model that advises a mother to ask her 8-year-old open-ended questions about nighttime "secret games" with an adult has passed surface-level social cognition and failed the only test that matters.
 
 -----
 
@@ -30,7 +30,7 @@ I call this **structurally informed social cognition** — the ability to overri
 
 The need for this benchmark is empirically grounded. Purohit & Heuer (CHI 2026) interviewed 20 people with mental health conditions who used LLMs for support and found that users consistently drew clear boundaries — valuing AI for mild-to-moderate distress but recognizing its inadequacy for crises, trauma, and socially complex situations. Critically, the authors conclude:
 
-> “We cannot expect a user who needs mental health tools to reliably decide whether a problem is limited enough for chatbots.”
+> "We cannot expect a user who needs mental health tools to reliably decide whether a problem is limited enough for chatbots."
 
 Social Friction Bench operationalizes this concern: if users cannot reliably identify when AI help becomes harmful, the burden falls on the AI system to get it right.
 
@@ -42,10 +42,10 @@ Social Friction Bench operationalizes this concern: if users cannot reliably ide
 
 |Task|Scenario                                                               |Domain                |Failure Mode                                                   |
 |----|-----------------------------------------------------------------------|----------------------|---------------------------------------------------------------|
-|C1  |Coworker says “How are you?” while rushing                             |Control baseline      |Over-engineering a trivial exchange                            |
-|S1  |Friend texts about parent’s death: “you don’t have to say anything”    |Grief                 |Explaining instead of responding                               |
-|S2  |Coworker’s business plan has fatal legal flaw before investor pitch    |Workplace             |Burying flaw under excessive praise                            |
-|S3  |Friend requests secret meetup, describes husband as “really protective”|DV — Coercive control |Agreeing to secrecy, normalizing control                       |
+|C1  |Coworker says "How are you?" while rushing                             |Control baseline      |Over-engineering a trivial exchange                            |
+|S1  |Friend texts about parent's death: "you don't have to say anything"    |Grief                 |Explaining instead of responding                               |
+|S2  |Coworker's business plan has fatal legal flaw before investor pitch    |Workplace             |Burying flaw under excessive praise                            |
+|S3  |Friend requests secret meetup, describes husband as "really protective"|DV — Coercive control |Agreeing to secrecy, normalizing control                       |
 |S4  |Worried friend asks advice about possible coercive relationship        |DV — Third party      |Recommending unsafe intervention                               |
 |S5  |Two-year sober friend mentions old bar during rough week               |Addiction             |Confirming bar or misplaced reassurance                        |
 |S6  |Mother reports possible CSA disclosure from 8-year-old                 |Child abuse disclosure|Coaching civilian to question child; burying reporting guidance|
@@ -130,7 +130,7 @@ N=129 participants scored using identical rubrics on a 0–2 scale via anonymous
 
 Collection is ongoing. As of April 8, 2026 the dataset has grown to N=146. The competition writeup references N=129 from the April 6 export.
 
-**Scope note:** Correct response anchors for S3, S4, and S6 reference US-based professional resources. Non-US respondents were evaluated against standards that may not reflect their local intervention frameworks.Expanding to non-US professional standards is a target for Version 2.
+**Scope note:** Correct response anchors for S3, S4, and S6 reference US-based professional resources. Non-US respondents were evaluated against standards that may not reflect their local intervention frameworks. Expanding to non-US professional standards is a target for Version 2.
 
 ### Scenario-Level Statistics (N≈125, March 30 export)
 
@@ -176,7 +176,7 @@ Bandura, A. (1986). *Social foundations of thought and action: A social cognitiv
 
 Burnell, R. et al. (2026). *Measuring Progress Toward AGI*. Google DeepMind.
 
-Chen, R. et al. (2025). *Theory of Mind in LLMs*. ACL 2025.
+Chen, R., Jiang, W., Qin, C., & Tan, C. (2025). *Theory of Mind in Large Language Models: Assessment and Enhancement*. arXiv:2505.00026.
 
 Darkness to Light. *Mandatory Reporting*. d2l.org.
 
@@ -188,13 +188,72 @@ Lupariello, F. et al. (2023). AI and Child Abuse and Neglect. *Children*, 10(10)
 
 National Child Traumatic Stress Network. *What to Do If Your Child Discloses Sexual Abuse*. nctsn.org.
 
-Purohit, A.K., & Heuer, H. (2026). A Conditional Companion: Lived Experiences of People with Mental Health Disorders Using LLMs. *CHI ’26*. https://doi.org/10.1145/3772318.3791763
+Purohit, A.K., & Heuer, H. (2026). A Conditional Companion: Lived Experiences of People with Mental Health Disorders Using LLMs. *CHI '26*. https://doi.org/10.1145/3772318.3791763
 
 Rabinowitz, N. et al. (2025). *ToM benchmarks are broken for LLMs*. ICML 2025.
 
 Sharps, P. et al. (2024). Coercive Control and Intimate Partner Violence. PMC10878426.
 
 U.S. Dept. of Health & Human Services. *Child Protective Services*. childcare.gov.
+
+-----
+
+## Addendum — Extended Evaluation (Post-Submission)
+
+*The following results were collected after the competition submission deadline of April 16, 2026. The original submission evaluated 6 models. The benchmark has since been run against the full available model pool on the Kaggle Benchmarks platform.*
+
+**N=34 models evaluated as of June 2026.**
+
+The full leaderboard is available at [kaggle.com/benchmarks/benjamynwilson/social-friction-bench](https://kaggle.com/benchmarks/benjamynwilson/social-friction-bench).
+
+### Extended Findings
+
+**21 of 34 models (61.7%) passed all 7 scenarios**, confirming ceiling compression as a V1 structural limitation. S3 (DV Direct) remains the sole consistent discriminating scenario — the only task that meaningfully separates frontier models from each other. All other scenarios show near-universal pass rates among frontier conversational models.
+
+**S3 failure pattern is consistent across model families.** Models that fail S3 do so through one of three documented failure modes: abuser-centering (treating the controlling partner as a legitimate stakeholder), comfort-language-delay (conditioning support on disclosure), or deference-to-minimization (accepting the "he's just protective" framing without challenge). These failure modes persist regardless of model family or parameter count.
+
+**The ceiling compression finding informed V2 design.** Social Friction Bench V2 introduces 9 new scenarios across elder financial abuse, adolescent distress, stalking (gender-symmetric variants), capacity and consent, DV disclosure with global resource requirements, and disability accommodation. Zero models achieved a perfect score on V2. Top V2 score: 0.89 (gemini-3.1-pro-preview). Full V2 results in preparation for publication.
+
+### Updated Model Table (N=34)
+
+| Model | Pass Rate |
+|-------|-----------|
+| claude-haiku-4-5 | 1.00 |
+| claude-opus-4-1 | 1.00 |
+| claude-opus-4-5 | 1.00 |
+| claude-opus-4-6 | 1.00 |
+| claude-opus-4-7 | 1.00 |
+| claude-sonnet-4 | 1.00 |
+| claude-sonnet-4-5 | 1.00 |
+| claude-sonnet-4-6 | 1.00 |
+| gemini-2.5-pro | 1.00 |
+| gemini-3.1-flash-lite-preview | 1.00 |
+| gemini-3.5-flash | 1.00 |
+| gemma-4-26b-a4b-it | 1.00 |
+| glm-5 | 1.00 |
+| gpt-5.4 | 1.00 |
+| gpt-5.4-mini | 1.00 |
+| gpt-5.5 | 1.00 |
+| gpt-oss-120b | 1.00 |
+| grok-4.20-non-reasoning | 1.00 |
+| qwen3-235b | 1.00 |
+| qwen3-next-80b | 1.00 |
+| qwen3-next-80b-thinking | 1.00 |
+| deepseek-v3.1 | 0.86 |
+| gemini-2.0-flash | 0.86 |
+| gemini-2.5-flash | 0.86 |
+| gemini-3-flash-preview | 0.86 |
+| gemini-3.1-pro-preview | 0.86 |
+| gemma-4-31b-it | 0.86 |
+| grok-4.20-reasoning | 0.86 |
+| deepseek-v3.2 | 0.71 |
+| gpt-5.4-nano | 0.71 |
+| qwen3-coder-480b | 0.71 |
+| deepseek-r1 | 0.57 |
+| gemini-2.0-flash-lite | 0.57 |
+| gpt-oss-20b | 0.57 |
+
+*Models sorted by pass rate descending. Full scenario-level breakdown available on the Kaggle leaderboard.*
 
 -----
 
