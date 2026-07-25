@@ -67,15 +67,13 @@ Full rubric dimensions, scoring anchors, and assertions for each scenario: [Rubr
 
 **Finding 2: DeepSeek-R1 over-reasons in low-stakes scenarios.** Lower scores on C1 and S2 reflect unnecessary meta-commentary despite correct knowledge elsewhere. The failure is behavioral and persists under favorable conditions.
 
-**Finding 3: S3 is the strongest discriminating scenario.** DV Direct produced the lowest human baseline (1.01/2.0) and the widest model variance (1.3 to 5.0). Coercive control detection remains a shared human-model challenge.
+**Finding 3: S3 is the strongest discriminating scenario.** DV Direct produced the lowest human baseline (1.01/2.0) and the widest model variance (1.3 to 5.0) — the only task that meaningfully separates frontier models from each other and from the human baseline. Coercive control detection remains a shared human-model challenge.
 
 **Finding 4: Gemma 3 27B fails high-stakes scenarios.** It underperformed on S3, S5, and S6, including unsafe guidance in child disclosure.
 
 **Finding 5: S4 is a compression zone.** All models scored perfectly, yet none identified maintaining connection as the key protective action. Pass rate masks structural failure.
 
 **Finding 6: Thoroughness is a failure mode.** Critical guidance is often buried under excessive detail — structurally incorrect helpfulness that is more dangerous than not helping.
-
-**Finding 7: S3 shows the widest variance.** The coercive control scenario (DV Direct) is the only task that meaningfully separates frontier models from each other and from the human baseline.
 
 ---
 
@@ -106,7 +104,9 @@ N=129 participants scored using identical rubrics on a 0–2 scale via anonymous
 **Collection period:** March 18 – April 6, 2026
 **Demographics:** Ages 18–55+, fields including healthcare/social work, law/legal, education, and technology. Respondents from at least 6 countries including the United States, India, United Kingdom, Australia, Portugal, and Indonesia.
 
-### Scenario-Level Statistics (N≈125, March 30 export)
+### Scenario-Level Statistics (March 30 export)
+
+*Per-scenario N varies slightly (86–124) due to export timing and the optional flag on S6; the full survey collected N=129. Figures below reflect the March 30 export.*
 
 | Scenario | N | Mean | SD | Min | Max |
 |----------|---|------|----|-----|-----|
@@ -185,7 +185,7 @@ The full leaderboard is available at [kaggle.com/benchmarks/benjamynwilson/socia
 
 ### Extended Findings
 
-**21 of 34 models (61.7%) passed all 7 scenarios**, confirming ceiling compression as a V1 structural limitation. S3 (DV Direct) remains the sole consistent discriminating scenario — the only task that meaningfully separates frontier models from each other. All other scenarios show near-universal pass rates among frontier conversational models.
+**21 of 34 models (61.8%) passed all 7 scenarios**, confirming ceiling compression as a V1 structural limitation. S3 (DV Direct) remains the sole consistent discriminating scenario — the only task that meaningfully separates frontier models from each other. All other scenarios show near-universal pass rates among frontier conversational models.
 
 **S3 failure pattern is consistent across model families.** Models that fail S3 do so through one of three documented failure modes: abuser-centering (treating the controlling partner as a legitimate stakeholder), comfort-language-delay (conditioning support on disclosure), or deference-to-minimization (accepting the "he's just protective" framing without challenge). These failure modes persist regardless of model family or parameter count.
 
